@@ -6,38 +6,44 @@ body {
     font-family: 'Proxima Nova';
     color: #ffffff;
 }
+
 a {
     text-decoration: none;
 }
+
 .container {
     max-width: 1245px;
     margin: auto;
 }
+
 .top-bg {
-    background: radial-gradient(100% 142.63% at 0% 0%, #E51245 0%, #9D4BC3 55.81%, #00ABE3 100%), #FFFFFF;  
+    background: radial-gradient(100% 142.63% at 0% 0%, #E51245 0%, #9D4BC3 55.81%, #00ABE3 100%), #FFFFFF;
 
     position: relative;
     overflow-x: hidden;
     overflow-y: visible;
 
-    &::after {
-        content: '';
-        position: absolute;
-        right: -80px;
-        top: 0;
-        width: 1000px;
-        height: 303px;
-        background: linear-gradient(180.01deg, rgba(255, 255, 255, 0.05) 0.01%, rgba(255, 255, 255, 0) 99.99%);
-        transform: rotate(29deg);
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 1000px;
-        height: 303px;
-        background: linear-gradient(180.01deg, rgba(255, 255, 255, 0.05) 0.01%, rgba(255, 255, 255, 0) 99.99%);
-        transform: rotate(29deg);
-    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     right: -80px;
+    //     top: 0;
+    //     width: 1000px;
+    //     height: 303px;
+    //     background: linear-gradient(180.01deg, rgba(255, 255, 255, 0.05) 0.01%, rgba(255, 255, 255, 0) 99.99%);
+    //     transform: rotate(29deg);
+    //     z-index: -1;
+    // }
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     width: 1000px;
+    //     height: 303px;
+    //     background: linear-gradient(180.01deg, rgba(255, 255, 255, 0.05) 0.01%, rgba(255, 255, 255, 0) 99.99%);
+    //     transform: rotate(29deg);
+    //     z-index: -1;
+    // }
 }
