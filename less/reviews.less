@@ -1,5 +1,63 @@
 // main: main.less
 
 .reviews {
+    padding-top: 60px;
     background: radial-gradient(76.32% 303.13% at 75.59% 24.04%, #0C9AF1 0%, #E05DBB 77.63%, #EC2655 100%);
+}
+
+.reviews__quote {
+    width: 52px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.reviews__text {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 54px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.review__author {
+    display: flex;
+}
+
+.review__img-block {
+    background-image: url(../img/reviewer-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.review__author-info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review__author-name {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+    // margin-bottom: 10px;
+}
+
+.review__author-intro {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    // margin-bottom: 15px;
+}
+
+.review__author-logo {
+    width: 105px;
+    height: 24px;
 }
