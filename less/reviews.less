@@ -3,6 +3,8 @@
 .reviews {
     padding-top: 60px;
     background: radial-gradient(76.32% 303.13% at 75.59% 24.04%, #0C9AF1 0%, #E05DBB 77.63%, #EC2655 100%);
+    clip-path: polygon(100% 0%, 100% 100%, 100% 100%, -550% 0%);
+    padding-bottom: 135px;
 }
 
 .reviews__quote {
@@ -21,6 +23,8 @@
 
 .review__author {
     display: flex;
+    padding-right: 200px;
+    margin-bottom: 60px;
 }
 
 .review__img-block {
@@ -60,4 +64,51 @@
 .review__author-logo {
     width: 105px;
     height: 24px;
+}
+.reviews__togglers {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.reviews__toggler {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button[data-reviews-toggle-right] {
+    transform: rotate(180deg);
+    margin-left: 40px;
+}
+.reviews__toggler svg {
+    width: 54px;
+    height: 19px;
+
+}
+.reviews__pagination {
+    .list-default;
+    display: flex;
+    justify-content: center;
+}
+.reviews__pagination-item {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    opacity: 0.3;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.reviews__pagination--active {
+    opacity: 0.7;
+}
+.reviews__bottom-cut {
+    display: block;
+    background: transparent;
+    width: 100%;
+    height: 135px;
+    position: relative;
+    overflow: hidden;
 }
