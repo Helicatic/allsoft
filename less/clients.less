@@ -1,7 +1,22 @@
 // main: main.less
 
 .clients {
+    padding-top: 160px;
     padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: -41px;
+        width: calc(100% + 200px);
+        height: 223.25px;
+        background: linear-gradient(180.01deg, rgba(49,146,215,0.06) .01%, rgba(255,255,255,0) 99.99%);
+        transform: matrix(.99, .11, -0.1, .99, 0, 0);
+        z-index: -1;
+    }
 }
 
 .clients__title {

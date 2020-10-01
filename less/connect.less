@@ -1,5 +1,20 @@
 // main: main.less
+.connect {
+  margin-bottom: 350px;
+  position: relative;
 
+  &::before {
+    content: '';
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: -63px;
+    left: -26px;
+    z-index: -1;
+    background: linear-gradient(180.01deg, rgba(49, 146, 215, 0.06) 0.01%, rgba(255, 255, 255, 0) 99.99%);
+    transform: matrix(0.99, 0.06, -0.11, 1, 0, 0);
+  }
+}
 .connect .container {
   padding-bottom: 80px;
   border-bottom: 1px solid #000;
