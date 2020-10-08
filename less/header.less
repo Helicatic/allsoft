@@ -1,5 +1,9 @@
 // main: main.less
 
+.header {
+    position: relative;
+    z-index: 999;
+}
 .header .container {
     display: flex;
     align-items: center
@@ -42,6 +46,24 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #ffffff;
+    transition: 0.3s;
+    position: relative;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
 }
 .header__nav-lang {
     font-weight: bold;
@@ -54,6 +76,14 @@
     margin-right: 20px;
     display: flex;
     align-items: center;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+    &:hover svg {
+        opacity: 1;
+    }
 }
 .header__nav-lang svg {
     fill: #fff;
@@ -61,6 +91,8 @@
     width: 9px;
     height: 6px;
     margin-left: 8px;
+    transition: 0.3s;
+
 }
 .header__request-link {
     font-weight: bold;
@@ -73,4 +105,10 @@
     border-radius: 10px;
     padding: 10px 20px;
     margin-left: auto;
+    transition: 0.3s;
+
+    &:hover {
+        background: #fff;
+        color: #40A8E7;
+    }
 }
